@@ -155,6 +155,9 @@ code {
   .মন্তব্য {
     margin-top: 1rem;
   }
+  .menu_bar {
+    padding: 0.4rem;
+  }
 }
 .tab-content>.tab-pane {
   max-height: fit-content !important;
