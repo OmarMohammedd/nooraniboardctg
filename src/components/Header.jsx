@@ -123,369 +123,336 @@ function Header() {
       </div>
   
 
+
+      
+<div className="menu_bar" id="menu_bar">
+  <div className="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        
+        <ul className="navbar-nav m-auto">
+              <li className="nav-item">
+                    <Link className="nav-link" to="/">
+                      হোম{" "}
+                    </Link>
+                  </li>
+                  <li className="nav-item dmenu dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      পরিচিতি
+                    </Link>
+                    <div
+                      className="dropdown-menu sm-menu"
+                      aria-labelledby="navbarDropdown"
+                      style={{ display: "none" }}
+                    >
+                      <Link className="dropdown-item" to="/page/bord-priciti">
+                        বোর্ড পরিচিতি
+                      </Link>
+                      <Link className="dropdown-item" to="/page/amader-karzkrm">
+                        আমাদের কার্যক্রম
+                      </Link>
+                      <Link className="dropdown-item" to="/message/1">
+                        চেয়ারম্যান
+                      </Link>
+                      <Link className="dropdown-item" to="/message/2">
+                        মহাসচিব
+                      </Link>
   
-      <div className={`menu_bar ${isMenuOpen ? 'menu_bar_open' : ''}`} id="menu_bar">
-      <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light">
-            <button
-              className="navbar-toggler"
-              aria-expanded={isMenuOpen ? 'true' : 'false'}
-              onClick={toggleMenu}
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-              <ul className="navbar-nav m-auto">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">
-                    হোম{" "}
-                  </Link>
-                </li>
-                <li className="nav-item dmenu dropdown">
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    পরিচিতি
-                  </Link>
-                  <div
-                    className="dropdown-menu sm-menu"
-                    aria-labelledby="navbarDropdown"
-                    style={{ display: "none" }}
-                  >
-                    <Link className="dropdown-item" to="/page/bord-priciti">
-                      বোর্ড পরিচিতি
-                    </Link>
-                    <Link className="dropdown-item" to="/page/amader-karzkrm">
-                      আমাদের কার্যক্রম
-                    </Link>
-                    <Link className="dropdown-item" to="/message/1">
-                      চেয়ারম্যান
-                    </Link>
-                    <Link className="dropdown-item" to="/message/2">
-                      মহাসচিব
-                    </Link>
-
+                      <Link
+                        className="dropdown-item"
+                        to="javascript:void(0)"
+                        data-toggle="modal"
+                        data-target="#phone_modal"
+                      >
+                        মাদরাসা নিবন্ধন (পরিদর্শক)
+                      </Link>
+                    </div>
+                  </li>
+                  <li className="nav-item dmenu dropdown">
                     <Link
-                      className="dropdown-item"
-                      to="javascript:void(0)"
-                      data-toggle="modal"
-                      data-target="#phone_modal"
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
                     >
-                      মাদরাসা নিবন্ধন (পরিদর্শক)
+                      সদস্যসমূহ
                     </Link>
-                  </div>
-                </li>
-                <li className="nav-item dmenu dropdown">
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    সদস্যসমূহ
-                  </Link>
-                  <div
-                    className="dropdown-menu sm-menu"
-                    aria-labelledby="navbarDropdown"
-                    style={{ display: "none" }}
-                  >
-                    <Link className="dropdown-item" to="/members-list/1">
-                      মজলিশে আমেলা (কার্যকরী পরিষদ)
-                    </Link>
-                    <Link className="dropdown-item" to="/members-list/2">
-                      মজলিশে সূরা
-                    </Link>
-                    <Link
-                      className="dropdown-item"
-                      to="/members/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%A6%E0%A6%B0%E0%A7%8D%E0%A6%B6%E0%A6%95"
+                    <div
+                      className="dropdown-menu sm-menu"
+                      aria-labelledby="navbarDropdown"
+                      style={{ display: "none" }}
                     >
-                      প্রশিক্ষক ও পরিদর্শক
+                      <Link className="dropdown-item" to="/members-list/1">
+                        মজলিশে আমেলা (কার্যকরী পরিষদ)
+                      </Link>
+                      <Link className="dropdown-item" to="/members-list/2">
+                        মজলিশে সূরা
+                      </Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/members/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%A6%E0%A6%B0%E0%A7%8D%E0%A6%B6%E0%A6%95"
+                      >
+                        প্রশিক্ষক ও পরিদর্শক
+                      </Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/members/%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE"
+                      >
+                        অফিস কর্মকর্তা
+                      </Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/members/%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%80%E0%A6%AC%E0%A7%83%E0%A6%A8%E0%A7%8D%E0%A6%A6"
+                      >
+                        কর্মচারীবৃন্দ
+                      </Link>
+                    </div>
+                  </li>
+  
+      
+  
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/application">
+                       অনলাইন আবেদন
                     </Link>
-                    <Link
-                      className="dropdown-item"
-                      to="/members/%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE"
-                    >
-                      অফিস কর্মকর্তা
+                    {/* অ্যাপ্লিকেশন */}
+                  </li>
+  
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/result">
+                      ফলাফল
                     </Link>
-                    <Link
-                      className="dropdown-item"
-                      to="/members/%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%80%E0%A6%AC%E0%A7%83%E0%A6%A8%E0%A7%8D%E0%A6%A6"
-                    >
-                      কর্মচারীবৃন্দ
-                    </Link>
-                  </div>
-                </li>
-
-                {/* <li className="nav-item dmenu dropdown">
-                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  আবেদন ফরম
-                </Link>
-
-                <div className="dropdown-menu sm-menu" aria-labelledby="navbarDropdown" style={{ display: 'none' }}>
-                  <Link className="dropdown-item" to="/institute-register-online">মাদরাসা
-                    নিবন্ধন ফরম (অনলাইন)</Link>
-
-                  <Link className="dropdown-item"
-                    to="/form/madrasah-registration-form">মাদরাসা নিবন্ধন ফরম</Link>
-                  <Link className="dropdown-item"
-                    to="/form/muallem-recruitment-application-form">মুয়াল্লিম নিয়োগ
-                    আবেদন ফরম</Link>
-
-                  <Link className="dropdown-item"
-                    to="/form/muallem-registration-form">মুয়াল্লিম ভর্তি ফরম</Link>
-
-                  <Link className="dropdown-item"
-                    to="/form/teacher-certificate-application-form-bangla">মুয়াল্লিম
-                    সনদ আবেদন ফরম (বাংলা)</Link>
-
-                  <Link className="dropdown-item"
-                    to="/form/teacher-certificate-application-form-arabic">মুয়াল্লিম
-                    সনদ আবেদন ফরম (আরবি)</Link>
-                  <Link className="dropdown-item"
-                    to="/form/kendreey-snd-preekshar-uttrptr-pun-nireekshner-abedn-frm">কেন্দ্রীয়
-                    সনদ পরীক্ষার উত্তরপত্র পুণঃ নিরীক্ষণের আবেদন ফরম</Link>
-                </div>
-
-
-              </li> */}
-
-                <li className="nav-item">
-                  <Link className="nav-link" to="/application">
-                     অনলাইন আবেদন
-                  </Link>
-                  {/* অ্যাপ্লিকেশন */}
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link" to="/result">
-                    ফলাফল
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link" to="/notice">
-                    নোটিশ
-                  </Link>
-                </li>
-                <li className="nav-item dmenu dropdown">
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    প্রশিক্ষণ
-                  </Link>
-
-                  <div
-                    className="dropdown-menu sm-menu"
-                    aria-labelledby="navbarDropdown"
-                    style={{ display: "none" }}
-                  >
-                    <Link
-                      className="dropdown-item"
-                      to="/moallem-training/%E0%A6%86%E0%A6%B0%E0%A6%AC%E0%A7%80"
-                    >
-                      মুয়াল্লিম প্রশিক্ষণ (আরবী)
-                    </Link>
-                    <Link
-                      className="dropdown-item"
-                      to="/moallem-training/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE"
-                    >
-                      মুয়াল্লিম প্রশিক্ষণ (বাংলা)
-                    </Link>
-
-                    <Link className="dropdown-item" to="/moallem-training-center">
-                      সকল প্রশিক্ষণ কেন্দ্রের তালিকা
-                    </Link>
-
-                    <Link className="dropdown-item" to="/permanent-training-center">
-                      স্থায়ী প্রশিক্ষণ কেন্দ্রসমূহ
-                    </Link>
-                    <Link
-                      className="dropdown-item"
-                      to="/page/prsikshne-ongsgrhner-niymablee"
-                    >
-                      প্রশিক্ষণের নিয়মাবলী
-                    </Link>
-                    <Link
-                      className="dropdown-item"
-                      to="/moallem-registration-forgot-form"
-                    >
-                      পূরণকৃত রেজিস্ট্রেশন ফরম ডাউনলোড
-                    </Link>
-
-                    <Link
-                      className="dropdown-item"
-                      to="/moallem-registration-admin-form"
-                    >
-                      প্রশিক্ষণার্থীর তালিকা (প্রশিক্ষক এডমিন)
-                    </Link>
-                  </div>
-                </li>
-
-                <li className="nav-item dmenu dropdown">
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to="#"
-                    id="navbarDropdown_exam"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    পরীক্ষা সংক্রান্ত
-                  </Link>
-                  <div
-                    className="dropdown-menu sm-menu"
-                    aria-labelledby="navbarDropdown_exam"
-                    style={{ display: "none" }}
-                  >
-                    <Link className="dropdown-item" to="/notice?is_exam=1">
+                  </li>
+  
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/notice">
                       নোটিশ
                     </Link>
-                    <Link className="dropdown-item" to="/form/admit-card">
-                      প্রবেশপত্র
+                  </li>
+                  <li className="nav-item dmenu dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      প্রশিক্ষণ
                     </Link>
-                  </div>
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link " to="/payment-fee">
-                    ফি প্রদান
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link " to="/retail-order">
-                    বই ও স্টেশনারি
-                  </Link>
-                </li>
-
-                <li className="nav-item dropdown megamenu-li dmenu">
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to=""
-                    id="dropdown01"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    অন্যান্য
-                  </Link>
-                  <div
-                    className="dropdown-menu megamenu sm-menu border-top"
-                    aria-labelledby="dropdown01"
-                    style={{ display: "none" }}
-                  >
-                    <div className="row">
-                      <div className="col-sm-6 col-lg-3 border-right mb-4">
-                        <h6>প্রকাশনা/পাঠ্যপুস্তক </h6>
-                        <Link className="dropdown-item" to="/books/play">
-                          <i className="fas fa-book-open"></i> প্লে
-                        </Link>
-                        <Link className="dropdown-item" to="/books/nursery">
-                          <i className="fas fa-book-open"></i> নার্সারী
-                        </Link>
-                        <Link className="dropdown-item" to="/books/class-1">
-                          <i className="fas fa-book-open"></i> প্রথম শ্রেণি
-                        </Link>
-                        <Link className="dropdown-item" to="/books/class-2">
-                          <i className="fas fa-book-open"></i> দ্বিতীয় শ্রেণি
-                        </Link>
-                        <Link className="dropdown-item" to="/books/class-3">
-                          <i className="fas fa-book-open"></i> তৃতীয় শ্রেণি
-                        </Link>
-                      </div>
-                      <div className="col-sm-6 col-lg-3 border-right mb-4">
-                        <h6>সিলেবাস</h6>
-                        <Link className="dropdown-item" to="/syllabus/play">
-                          <i className="fas fa-book-reader"></i> প্লে
-                        </Link>
-                        <Link className="dropdown-item" to="/syllabus/nursery">
-                          <i className="fas fa-book-reader"></i> নার্সারী
-                        </Link>
-                        <Link className="dropdown-item" to="/syllabus/class-1">
-                          <i className="fas fa-book-reader"></i> প্রথম শ্রেণি
-                        </Link>
-                        <Link className="dropdown-item" to="/syllabus/class-2">
-                          <i className="fas fa-book-reader"></i> দ্বিতীয় শ্রেণি
-                        </Link>
-                        <Link className="dropdown-item" to="/syllabus/class-3">
-                          <i className="fas fa-book-reader"></i> তৃতীয় শ্রেণি
-                        </Link>
-                      </div>
-
-                      <div className="col-sm-6 col-lg-3 border-right mb-4">
-                        <h6>ছবি/ভিডিও</h6>
-
-                        <Link className="dropdown-item" to="/photo-gallery">
-                          <i className="fas fa-camera-retro"></i>ছবি
-                        </Link>
-
-                        <Link className="dropdown-item" to="/video-gallery">
-                          <i className="fas fa-file-video"></i> ভিডিও
-                        </Link>
-                        <Link className="dropdown-item" to="/event">
-                          <i className="fas fa-calendar-alt"></i>সভা / অনুষ্ঠান
-                        </Link>
-                      </div>
-                      <div className="col-sm-6 col-lg-3 border-right mb-4">
-                        <Link
-                          className="dropdown-item"
-                          to="/page/bisesh-jruree-pramrs-madrasa-dui-belaek-bela-prsngoe"
-                        >
-                          <i className="fas fa-clipboard-check"></i>বিশেষ জরুরী
-                          পরামর্শ
-                        </Link>
-
-                        <Link className="dropdown-item" to="/page/ovivabker-dayitw">
-                          <i className="fas fa-atlas"></i>অভিভাবকের দায়িত্ব
-                        </Link>
-
-                        <Link
-                          className="dropdown-item"
-                          to="/page/chatr-chatreeder-krneey"
-                        >
-                          <i className="fas fa-clipboard-list"></i>ছাত্র-ছাত্রীদের
-                          করণীয়
-                        </Link>
-
-                        <Link className="dropdown-item" to="/page/mene-clte-pari">
-                          <i className="fas fa-calendar-check"></i>মেনে চলতে পারি
-                        </Link>
-
-                        <Link className="dropdown-item" to="/transaction">
-                          <i className="fas fa-file-invoice-dollar"></i>অনলাইন
-                          পেমেন্ট প্রুফ ডাউনলোড
-                        </Link>
-                        <Link className="dropdown-item" to="/contact">
-                          <i className="fas fa-mail-bulk"></i>
-                          যোগাযোগ
-                        </Link>
+  
+                    <div
+                      className="dropdown-menu sm-menu"
+                      aria-labelledby="navbarDropdown"
+                      style={{ display: "none" }}
+                    >
+                      <Link
+                        className="dropdown-item"
+                        to="/moallem-training/%E0%A6%86%E0%A6%B0%E0%A6%AC%E0%A7%80"
+                      >
+                        মুয়াল্লিম প্রশিক্ষণ (আরবী)
+                      </Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/moallem-training/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE"
+                      >
+                        মুয়াল্লিম প্রশিক্ষণ (বাংলা)
+                      </Link>
+  
+                      <Link className="dropdown-item" to="/moallem-training-center">
+                        সকল প্রশিক্ষণ কেন্দ্রের তালিকা
+                      </Link>
+  
+                      <Link className="dropdown-item" to="/permanent-training-center">
+                        স্থায়ী প্রশিক্ষণ কেন্দ্রসমূহ
+                      </Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/page/prsikshne-ongsgrhner-niymablee"
+                      >
+                        প্রশিক্ষণের নিয়মাবলী
+                      </Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/moallem-registration-forgot-form"
+                      >
+                        পূরণকৃত রেজিস্ট্রেশন ফরম ডাউনলোড
+                      </Link>
+  
+                      <Link
+                        className="dropdown-item"
+                        to="/moallem-registration-admin-form"
+                      >
+                        প্রশিক্ষণার্থীর তালিকা (প্রশিক্ষক এডমিন)
+                      </Link>
+                    </div>
+                  </li>
+  
+                  <li className="nav-item dmenu dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="#"
+                      id="navbarDropdown_exam"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      পরীক্ষা সংক্রান্ত
+                    </Link>
+                    <div
+                      className="dropdown-menu sm-menu"
+                      aria-labelledby="navbarDropdown_exam"
+                      style={{ display: "none" }}
+                    >
+                      <Link className="dropdown-item" to="/notice?is_exam=1">
+                        নোটিশ
+                      </Link>
+                      <Link className="dropdown-item" to="/form/admit-card">
+                        প্রবেশপত্র
+                      </Link>
+                    </div>
+                  </li>
+  
+                  <li className="nav-item">
+                    <Link className="nav-link " to="/payment-fee">
+                      ফি প্রদান
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link " to="/retail-order">
+                      বই ও স্টেশনারি
+                    </Link>
+                  </li>
+  
+                  <li className="nav-item dropdown megamenu-li dmenu">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to=""
+                      id="dropdown01"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      অন্যান্য
+                    </Link>
+                    <div
+                      className="dropdown-menu megamenu sm-menu border-top"
+                      aria-labelledby="dropdown01"
+                      style={{ display: "none" }}
+                    >
+                      <div className="row">
+                        <div className="col-sm-6 col-lg-3 border-right mb-4">
+                          <h6>প্রকাশনা/পাঠ্যপুস্তক </h6>
+                          <Link className="dropdown-item" to="/books/play">
+                            <i className="fas fa-book-open"></i> প্লে
+                          </Link>
+                          <Link className="dropdown-item" to="/books/nursery">
+                            <i className="fas fa-book-open"></i> নার্সারী
+                          </Link>
+                          <Link className="dropdown-item" to="/books/class-1">
+                            <i className="fas fa-book-open"></i> প্রথম শ্রেণি
+                          </Link>
+                          <Link className="dropdown-item" to="/books/class-2">
+                            <i className="fas fa-book-open"></i> দ্বিতীয় শ্রেণি
+                          </Link>
+                          <Link className="dropdown-item" to="/books/class-3">
+                            <i className="fas fa-book-open"></i> তৃতীয় শ্রেণি
+                          </Link>
+                        </div>
+                        <div className="col-sm-6 col-lg-3 border-right mb-4">
+                          <h6>সিলেবাস</h6>
+                          <Link className="dropdown-item" to="/syllabus/play">
+                            <i className="fas fa-book-reader"></i> প্লে
+                          </Link>
+                          <Link className="dropdown-item" to="/syllabus/nursery">
+                            <i className="fas fa-book-reader"></i> নার্সারী
+                          </Link>
+                          <Link className="dropdown-item" to="/syllabus/class-1">
+                            <i className="fas fa-book-reader"></i> প্রথম শ্রেণি
+                          </Link>
+                          <Link className="dropdown-item" to="/syllabus/class-2">
+                            <i className="fas fa-book-reader"></i> দ্বিতীয় শ্রেণি
+                          </Link>
+                          <Link className="dropdown-item" to="/syllabus/class-3">
+                            <i className="fas fa-book-reader"></i> তৃতীয় শ্রেণি
+                          </Link>
+                        </div>
+  
+                        <div className="col-sm-6 col-lg-3 border-right mb-4">
+                          <h6>ছবি/ভিডিও</h6>
+  
+                          <Link className="dropdown-item" to="/photo-gallery">
+                            <i className="fas fa-camera-retro"></i>ছবি
+                          </Link>
+  
+                          <Link className="dropdown-item" to="/video-gallery">
+                            <i className="fas fa-file-video"></i> ভিডিও
+                          </Link>
+                          <Link className="dropdown-item" to="/event">
+                            <i className="fas fa-calendar-alt"></i>সভা / অনুষ্ঠান
+                          </Link>
+                        </div>
+                        <div className="col-sm-6 col-lg-3 border-right mb-4">
+                          <Link
+                            className="dropdown-item"
+                            to="/page/bisesh-jruree-pramrs-madrasa-dui-belaek-bela-prsngoe"
+                          >
+                            <i className="fas fa-clipboard-check"></i>বিশেষ জরুরী
+                            পরামর্শ
+                          </Link>
+  
+                          <Link className="dropdown-item" to="/page/ovivabker-dayitw">
+                            <i className="fas fa-atlas"></i>অভিভাবকের দায়িত্ব
+                          </Link>
+  
+                          <Link
+                            className="dropdown-item"
+                            to="/page/chatr-chatreeder-krneey"
+                          >
+                            <i className="fas fa-clipboard-list"></i>ছাত্র-ছাত্রীদের
+                            করণীয়
+                          </Link>
+  
+                          <Link className="dropdown-item" to="/page/mene-clte-pari">
+                            <i className="fas fa-calendar-check"></i>মেনে চলতে পারি
+                          </Link>
+  
+                          <Link className="dropdown-item" to="/transaction">
+                            <i className="fas fa-file-invoice-dollar"></i>অনলাইন
+                            পেমেন্ট প্রুফ ডাউনলোড
+                          </Link>
+                          <Link className="dropdown-item" to="/contact">
+                            <i className="fas fa-mail-bulk"></i>
+                            যোগাযোগ
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
-              <ul className="navbar-nav ml-auto"></ul>
-            </div>
-          </nav>
-        </div>
+                  </li>
+        </ul>
+        
       </div>
-      
+    </div>
+  </nav>
+  </div>
+</div>
     
 
 

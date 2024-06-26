@@ -149,8 +149,6 @@ code {
   padding: 0.5rem;
 }
 
-
-
 @media (max-width:767px){
   .মন্তব্য {
     margin-top: 1rem;
@@ -162,3 +160,11 @@ code {
 .tab-content>.tab-pane {
   max-height: fit-content !important;
 }
+
+
+.menu_bar .navbar-toggler {
+  border: none; 
+  outline: none; 
+  box-shadow: none; 
+}
+
