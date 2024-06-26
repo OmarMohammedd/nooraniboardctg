@@ -61,7 +61,7 @@ function OnlaineBi() {
                   </p>
                 </object>
                 <Link
-                  to="../public/storage/notice/onlaine-bi-oo-shtesnaree-pnz-kryer-pddhti_pdf.pdf"
+                  to="./public/storage/notice/onlaine-bi-oo-shtesnaree-pnz-kryer-pddhti_pdf.pdf"
                   download="অনলাইনে বই ও ষ্টেশনারী পণ্য ক্রয়ের পদ্ধতি"
                   className="mt-2 btn btn-danger"
                 >

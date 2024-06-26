@@ -111,7 +111,7 @@ function Hijree() {
                   </p>
                 </object>
                 <Link
-                  to="../public/storage/notice/1443-hijree-trriteey-srenir-preekshar-rutin_pdf.pdf"
+                  to="./public/storage/notice/1443-hijree-trriteey-srenir-preekshar-rutin_pdf.pdf"
                   download="১৪৪৫ হিজরী -তৃতীয় শ্রেণির পরীক্ষার রুটিন"
                   className="mt-2 btn btn-danger"
                 >

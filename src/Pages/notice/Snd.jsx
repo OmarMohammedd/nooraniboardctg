@@ -54,7 +54,7 @@ function Snd() {
                   </p>
                 </object>
                 <Link
-                  to="../public/storage/notice/snd-preekshar-uttrptr-pun-nireekshner-abedn-frmet_pdf.pdf"
+                  to="./public/storage/notice/snd-preekshar-uttrptr-pun-nireekshner-abedn-frmet_pdf.pdf"
                   download="সনদ পরীক্ষার উত্তরপত্র পুনঃ নিরীক্ষণের আবেদন ফরমেট"
                   className="mt-2 btn btn-danger"
                 >

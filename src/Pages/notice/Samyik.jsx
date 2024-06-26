@@ -71,7 +71,7 @@ function Samyik() {
                   </p>
                 </object>
                 <Link
-                  to="../public/storage/notice/1m-samyik-preeksha-rutin-2024ing_pdf.pdf"
+                  to="./public/storage/notice/1m-samyik-preeksha-rutin-2024ing_pdf.pdf"
                   download="১ম সাময়িক পরীক্ষা রুটিন: ২০২৪ইং"
                   className="mt-2 btn btn-danger"
                 >

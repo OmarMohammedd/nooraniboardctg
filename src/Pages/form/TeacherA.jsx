@@ -46,7 +46,7 @@ function TeacherA() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="../public/storage/forms/muyallim-snd-abedn-frm-arbi_pdf.pdf">
+                    <Link to="./public/storage/forms/muyallim-snd-abedn-frm-arbi_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

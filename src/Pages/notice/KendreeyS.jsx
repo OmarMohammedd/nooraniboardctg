@@ -56,7 +56,7 @@ function KendreeyS() {
                   </p>
                 </object>
                 <Link
-                  to="../public/storage/notice/kendreey-snd-preeksha-2023-er-cithi_pdf.pdf"
+                  to="./public/storage/notice/kendreey-snd-preeksha-2023-er-cithi_pdf.pdf"
                   download="কেন্দ্রীয় সনদ পরীক্ষা- ২০২৩ এর চিঠি"
                   className="mt-2 btn btn-danger"
                 >

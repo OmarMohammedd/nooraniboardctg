@@ -45,7 +45,7 @@ function MuallemRRR() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="../public/storage/forms/muyallim-vrti-frm_pdf.pdf">
+                    <Link to="./public/storage/forms/muyallim-vrti-frm_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

@@ -61,7 +61,7 @@ function OnlaineFi() {
                   </p>
                 </object>
                 <Link
-                  to="../public/storage/notice/onlaine-fi-prisodher-pddhti_pdf.pdf"
+                  to="./public/storage/notice/onlaine-fi-prisodher-pddhti_pdf.pdf"
                   download="অনলাইনে ফি পরিশোধের পদ্ধতি"
                   className="mt-2 btn btn-danger"
                 >

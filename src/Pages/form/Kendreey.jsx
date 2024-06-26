@@ -46,7 +46,7 @@ function Kendreey() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="../public/storage/forms/kendreey-snd-preekshar-uttrptr-pun-nireekshner-abedn-frm_pdf.pdf">
+                    <Link to="./public/storage/forms/kendreey-snd-preekshar-uttrptr-pun-nireekshner-abedn-frm_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

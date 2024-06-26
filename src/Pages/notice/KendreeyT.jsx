@@ -56,7 +56,7 @@ function KendreeyT() {
                   </p>
                 </object>
                 <Link
-                  to="../public/storage/notice/kendreey-snd-trriteey-preekshar-rutin_pdf.pdf"
+                  to="./public/storage/notice/kendreey-snd-trriteey-preekshar-rutin_pdf.pdf"
                   download="কেন্দ্রীয় সনদ (তৃতীয়) পরীক্ষার রুটিন"
                   className="mt-2 btn btn-danger"
                 >
