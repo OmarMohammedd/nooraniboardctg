@@ -55,7 +55,7 @@ function OnlaineFi() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="./public/storage/notice/onlaine-fi-prisodher-pddhti_pdf.pdf">
+                    <Link to="https://nooraniboardctg.com/public/storage/notice/onlaine-fi-prisodher-pddhti_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

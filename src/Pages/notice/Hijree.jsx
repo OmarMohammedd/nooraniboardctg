@@ -105,7 +105,7 @@ function Hijree() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="./public/storage/notice/1443-hijree-trriteey-srenir-preekshar-rutin_pdf.pdf">
+                    <Link to="https://nooraniboardctg.com/public/storage/notice/1443-hijree-trriteey-srenir-preekshar-rutin_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

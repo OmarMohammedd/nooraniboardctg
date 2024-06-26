@@ -65,7 +65,7 @@ function Samyik() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="./public/storage/notice/1m-samyik-preeksha-rutin-2024ing_pdf.pdf">
+                    <Link to="https://nooraniboardctg.com/public/storage/notice/1m-samyik-preeksha-rutin-2024ing_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

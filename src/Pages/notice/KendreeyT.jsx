@@ -50,7 +50,7 @@ function KendreeyT() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="./public/storage/notice/kendreey-snd-trriteey-preekshar-rutin_pdf.pdf">
+                    <Link to="https://nooraniboardctg.com/public/storage/notice/kendreey-snd-trriteey-preekshar-rutin_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

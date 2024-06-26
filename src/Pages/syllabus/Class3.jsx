@@ -43,7 +43,7 @@ function Class3() {
                   >
                     <p>
                       Click here to view{" "}
-                      <a href="/public/storage/academic/sudhu-2021-siksha-brsher-jnz-przojz_pdf.pdf">
+                      <a href="https://nooraniboardctg.com/public/storage/academic/sudhu-2021-siksha-brsher-jnz-przojz_pdf.pdf">
                         PDF File !
                       </a>
                     </p>

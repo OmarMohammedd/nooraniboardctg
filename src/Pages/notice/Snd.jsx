@@ -48,7 +48,7 @@ function Snd() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="./public/storage/notice/snd-preekshar-uttrptr-pun-nireekshner-abedn-frmet_pdf.pdf">
+                    <Link to="https://nooraniboardctg.com/public/storage/notice/snd-preekshar-uttrptr-pun-nireekshner-abedn-frmet_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

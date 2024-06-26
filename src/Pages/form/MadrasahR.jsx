@@ -46,7 +46,7 @@ function MadrasahR() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="./public/storage/forms/madrasa-nibndhn-frm_pdf.pdf">
+                    <Link to="https://nooraniboardctg.com/public/storage/forms/madrasa-nibndhn-frm_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>
