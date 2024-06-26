@@ -151,3 +151,11 @@ code {
 
 
 
+@media (max-width:767px){
+  .মন্তব্য {
+    margin-top: 1rem;
+  }
+}
+.tab-content>.tab-pane {
+  max-height: fit-content !important;
+}

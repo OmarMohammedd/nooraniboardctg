@@ -44,7 +44,7 @@ function AdmitCard() {
                 >
                   <p>
                     Click here to view{" "}
-                    <Link to="./public/storage/forms/prbesptr_pdf.pdf">
+                    <Link to="https://nooraniboardctg.com/public/storage/forms/prbesptr_pdf.pdf">
                       PDF File !
                     </Link>
                   </p>

@@ -261,7 +261,7 @@ function Header() {
 
                 <li className="nav-item">
                   <Link className="nav-link" to="/application">
-                    application
+                     অনলাইন আবেদন
                   </Link>
                   {/* অ্যাপ্লিকেশন */}
                 </li>

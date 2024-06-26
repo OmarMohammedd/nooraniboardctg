@@ -612,7 +612,7 @@ function Institute_register_online() {
                                 অনলাইন (নগদ){" "}
                                 <img
                                   style={{ width: 50 }}
-                                  src="../nooraniboardctg.com/public/payment/nagad.html"
+                                  src="https://nooraniboardctg.com/nooraniboardctg.com/public/payment/nagad"
                                   alt=""
                                 />
                               </label>
