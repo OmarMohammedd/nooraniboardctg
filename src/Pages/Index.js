@@ -705,7 +705,7 @@ const testimonialItems = [
             </OwlCarousel>
         </div>
 
-      <div className="card shadow-sm hvr-float-shadow w-100" style={{marginTop:"0.340rem"}}>
+      <div className="card shadow-sm hvr-float-shadow w-100" style={{marginTop:"1rem"}}>
         <div className="card-body text-center training_institute_card p-2">
           <a href="/event">
             <i className="fas fa-calendar-alt text-white" />
