@@ -163,8 +163,11 @@ code {
 
 
 .menu_bar .navbar-toggler {
-  border: none; 
-  outline: none; 
-  box-shadow: none; 
+  border-color: rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, .5);
+  outline: 0 !important;
+}
+.navbar-nav li {
+  white-space: nowrap;
 }
 

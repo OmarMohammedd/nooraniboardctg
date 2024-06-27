@@ -5,13 +5,51 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
-import OwlCarousel from "react-owl-carousel";
+import OwlCarousel from 'react-owl-carousel2';
+import 'react-owl-carousel2/src/owl.carousel.css';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Index() {
+
+  const options = {
+    loop: true,
+    autoplay: true,
+    nav: false,
+    pagination: true,
+    navigation: false,
+    slideSpeed: 5000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+};
+
+const testimonialItems = [
+    {
+        description: "প্রাচীন ও বৃহত্তম দ্বীনি এদারাহ আল জামিয়াতুল আহলিয়া দারুল উলুম হাটহাজারীর তত্ত্বাবধানে “নূরানী তালীমুল কুরআন বোর্ড চট্টগ্রাম বাংলাদেশ” প্রতিষ্ঠা করা হয়",
+        title: "শিক্ষক",
+        post: "- হাজীপাড়া মাদরাসা"
+    },
+    {
+        description: "প্রাচীন ও বৃহত্তম দ্বীনি এদারাহ আল জামিয়াতুল আহলিয়া দারুল উলুম হাটহাজারীর তত্ত্বাবধানে “নূরানী তালীমুল কুরআন বোর্ড চট্টগ্রাম বাংলাদেশ” প্রতিষ্ঠা করা হয়",
+        title: "আরাবিয়ান নুরানি",
+        post: "- ছাত্র"
+    }
+];
+
+
+
+
   const SampleNextArrow = (props) => {
     const { onClick } = props;
     return (
@@ -647,30 +685,26 @@ function Index() {
         </div>
       </div>
     </div>
+
     <div className="col-md-4">
       <h2 className="hdr-primary">
         <span className="মন্তব্য">মন্তব্য সমূহ</span>
       </h2>
-      <div id="testimonial-slider" className="owl-carousel">
-        <div className="testimonial">
-          <p className="description">
-            প্রাচীন ও বৃহত্তম দ্বীনি এদারাহ আল জামিয়াতুল আহলিয়া দারুল উলুম
-            হাটহাজারীর তত্ত্বাবধানে “নূরানী তালীমুল কুরআন বোর্ড চট্টগ্রাম
-            বাংলাদেশ” প্রতিষ্ঠা করা হয়
-          </p>
-          <h3 className="title">শিক্ষক </h3>
-          <small className="post">- হাজীপাড়া মাদরাসা </small>
+
+
+
+       <div className="testimonial-slider" style={{marginTop:"1rem"}}>
+            <OwlCarousel options={options}>
+                {testimonialItems.map((item, index) => (
+                    <div key={index} className="testimonial">
+                        <p className="description">{item.description}</p>
+                        <h3 className="title">{item.title}</h3>
+                        <small className="post">{item.post}</small>
+                    </div>
+                ))}
+            </OwlCarousel>
         </div>
-        <div className="testimonial">
-          <p className="description">
-            প্রাচীন ও বৃহত্তম দ্বীনি এদারাহ আল জামিয়াতুল আহলিয়া দারুল উলুম
-            হাটহাজারীর তত্ত্বাবধানে “নূরানী তালীমুল কুরআন বোর্ড চট্টগ্রাম
-            বাংলাদেশ” প্রতিষ্ঠা করা হয়
-          </p>
-          <h3 className="title">আরাবিয়ান নুরানি </h3>
-          <small className="post">- ছাত্র </small>
-        </div>
-      </div>
+
       <div className="card shadow-sm hvr-float-shadow w-100">
         <div className="card-body text-center training_institute_card p-2">
           <a href="/event">
@@ -681,6 +715,7 @@ function Index() {
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
