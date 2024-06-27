@@ -693,7 +693,7 @@ const testimonialItems = [
 
 
 
-       <div className="testimonial-slider" style={{marginTop:"1rem"}}>
+       <div className="testimonial-slider">
             <OwlCarousel options={options}>
                 {testimonialItems.map((item, index) => (
                     <div key={index} className="testimonial">
